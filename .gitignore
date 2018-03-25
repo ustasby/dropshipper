@@ -1,13 +1,14 @@
 # Created by .ignore support plugin (hsz.mobi)
+
+
+/storage/
+var/
+*.auto.tpl
+!/core/rs/cache/
+!/core/*
 _local_settings.php
 config.auto.php
 test/
 .idea/
 cache/
 logs/
-
-storage/
-var/
-*.auto.tpl
-!/core/rs/cache/
-!/core/
