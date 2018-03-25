@@ -161,6 +161,9 @@ class Handlers extends \RS\Event\HandlerAbstract
             'ds_cost_val' => new Decimal(array(
                     'description' => t('Цена дропшипера'))
             ),
+            'order_type' => new Integer(array(
+                'description' => t('Тип заказа'))
+            ),
         ));
     }
 
@@ -172,7 +175,7 @@ class Handlers extends \RS\Event\HandlerAbstract
             ),
             'ds_price' => new Decimal(array(
                 'description' => t('Сумма дропшипера'))
-            )
+            ),
         ));
     }
 

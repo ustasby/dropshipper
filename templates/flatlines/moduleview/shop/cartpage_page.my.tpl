@@ -191,7 +191,9 @@
                                     <a class="link link-more link-apply" href="{$router->getUrl('evasmart-front-cartpage', ["Act" => "update"])}">Оформить дропшипинг</a>
                                 </div>
                             {/if}
-
+                            <div class="t-buy-oneclick">
+                                <a class="link link-more link-apply" href="{$router->getUrl('evasmart-front-checkout', ["Act" => "default"])}">Оформить заказ</a>
+                            </div>
 
 
 
@@ -207,12 +209,13 @@
 
                                     <div class="t-order_button-block">
 
-                                        <button type="button" class="link link-more link-apply rs-submit{if $cart_data.has_error} disabled{/if}">{t}Оформить заказ{/t}</button>
+                                        {*<button type="button" class="link link-more link-apply rs-submit{if $cart_data.has_error} disabled{/if}">{t}Оформить заказ{/t}</button>*}
                                         <a class="link link-one-click rs-continue">{t}Продолжить покупки{/t}</a>
                                     </div>
                                 </div>
                             {/hook}
 
+                            {*
                             <div class="t-actions">
                                 <h3 class="h3">{t}Акции{/t}:</h3>
                                 {$coupons=$cart->getCouponItems()}
@@ -234,6 +237,7 @@
                                     {/foreach}
                                 {/if}
                             </div>
+                            *}
                         </div>
                     </div>
                 </div>

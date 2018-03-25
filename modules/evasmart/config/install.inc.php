@@ -28,7 +28,7 @@ class Install extends \RS\Module\AbstractInstall
             }
 
             $order = new Order();
-            if (!isset($order['price_buyer'])) {
+            if (!isset($order['order_type'])) {
                 Handlers::ormInitShopOrder($order);
                 $order->dbUpdate();
             }
@@ -67,15 +67,16 @@ class Install extends \RS\Module\AbstractInstall
                 Handlers::ormInitUsersUser($user);
                 $user->dbUpdate();
             }
+
             $order = new Order();
-            if (!isset($order['price_buyer'])) {
+            if (!isset($order['order_type'])) {
                 Handlers::ormInitShopOrder($order);
                 $order->dbUpdate();
             }
 
             // цены дропшипера
             $orderItem = new OrderItem();
-            if (!isset($order['ds_single_cost']) || !isset($order['ds_price'])) {
+            if (!isset($orderItem['ds_single_cost']) || !isset($orderItem['ds_price'])) {
                 Handlers::ormInitShopOrderItem($orderItem);
                 $orderItem->dbUpdate();
             }
