@@ -1,0 +1,779 @@
+@media screen and (min-width: 760px) and (max-width: 980px) {
+    /*
+      960 Grid System ~ Core CSS.
+      Learn more ~ http://960.gs/
+
+      Licensed under GPL and MIT.
+    */
+
+    /*
+      Forces backgrounds to span full width,
+      even if there is horizontal scrolling.
+      Increase this if your layout is wider.
+
+      Note: IE6 works fine without this fix.
+    */
+
+    body {
+      min-width: 720px;
+    }
+
+    /* `Containers
+    ----------------------------------------------------------------------------------------------------*/
+
+    .container_12 {
+      margin-left: auto;
+      margin-right: auto;
+      width: 720px;
+    }
+
+    /* `Grid >> Global
+    ----------------------------------------------------------------------------------------------------*/
+
+    .grid_1,
+    .grid_2,
+    .grid_3,
+    .grid_4,
+    .grid_5,
+    .grid_6,
+    .grid_7,
+    .grid_8,
+    .grid_9,
+    .grid_10,
+    .grid_11,
+    .grid_12 {
+      display: inline;
+      float: left;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+
+    .push_1, .pull_1,
+    .push_2, .pull_2,
+    .push_3, .pull_3,
+    .push_4, .pull_4,
+    .push_5, .pull_5,
+    .push_6, .pull_6,
+    .push_7, .pull_7,
+    .push_8, .pull_8,
+    .push_9, .pull_9,
+    .push_10, .pull_10,
+    .push_11, .pull_11 {
+      position: relative;
+    }
+
+    /* `Grid >> Children (Alpha ~ First, Omega ~ Last)
+    ----------------------------------------------------------------------------------------------------*/
+
+    .alpha {
+      margin-left: 0;
+    }
+
+    .omega {
+      margin-right: 0;
+    }
+
+    /* `Grid >> 12 Columns
+    ----------------------------------------------------------------------------------------------------*/
+
+    .container_12 .grid_1 {
+      width: 40px;
+    }
+
+    .container_12 .grid_2 {
+      width: 100px;
+    }
+
+    .container_12 .grid_3 {
+      width: 160px;
+    }
+
+    .container_12 .grid_4 {
+      width: 220px;
+    }
+
+    .container_12 .grid_5 {
+      width: 280px;
+    }
+
+    .container_12 .grid_6 {
+      width: 340px;
+    }
+
+    .container_12 .grid_7 {
+      width: 400px;
+    }
+
+    .container_12 .grid_8 {
+      width: 460px;
+    }
+
+    .container_12 .grid_9 {
+      width: 520px;
+    }
+
+    .container_12 .grid_10 {
+      width: 580px;
+    }
+
+    .container_12 .grid_11 {
+      width: 640px;
+    }
+
+    .container_12 .grid_12 {
+      width: 700px;
+    }
+
+    /* `Prefix Extra Space >> 12 Columns
+    ----------------------------------------------------------------------------------------------------*/
+
+    .container_12 .prefix_1 {
+      padding-left: 60px;
+    }
+
+    .container_12 .prefix_2 {
+      padding-left: 120px;
+    }
+
+    .container_12 .prefix_3 {
+      padding-left: 180px;
+    }
+
+    .container_12 .prefix_4 {
+      padding-left: 240px;
+    }
+
+    .container_12 .prefix_5 {
+      padding-left: 300px;
+    }
+
+    .container_12 .prefix_6 {
+      padding-left: 360px;
+    }
+
+    .container_12 .prefix_7 {
+      padding-left: 420px;
+    }
+
+    .container_12 .prefix_8 {
+      padding-left: 480px;
+    }
+
+    .container_12 .prefix_9 {
+      padding-left: 540px;
+    }
+
+    .container_12 .prefix_10 {
+      padding-left: 600px;
+    }
+
+    .container_12 .prefix_11 {
+      padding-left: 660px;
+    }
+
+    /* `Suffix Extra Space >> 12 Columns
+    ----------------------------------------------------------------------------------------------------*/
+
+    .container_12 .suffix_1 {
+      padding-right: 60px;
+    }
+
+    .container_12 .suffix_2 {
+      padding-right: 120px;
+    }
+
+    .container_12 .suffix_3 {
+      padding-right: 180px;
+    }
+
+    .container_12 .suffix_4 {
+      padding-right: 240px;
+    }
+
+    .container_12 .suffix_5 {
+      padding-right: 300px;
+    }
+
+    .container_12 .suffix_6 {
+      padding-right: 360px;
+    }
+
+    .container_12 .suffix_7 {
+      padding-right: 420px;
+    }
+
+    .container_12 .suffix_8 {
+      padding-right: 480px;
+    }
+
+    .container_12 .suffix_9 {
+      padding-right: 540px;
+    }
+
+    .container_12 .suffix_10 {
+      padding-right: 600px;
+    }
+
+    .container_12 .suffix_11 {
+      padding-right: 660px;
+    }
+
+    /* `Push Space >> 12 Columns
+    ----------------------------------------------------------------------------------------------------*/
+
+    .container_12 .push_1 {
+      left: 60px;
+    }
+
+    .container_12 .push_2 {
+      left: 120px;
+    }
+
+    .container_12 .push_3 {
+      left: 180px;
+    }
+
+    .container_12 .push_4 {
+      left: 240px;
+    }
+
+    .container_12 .push_5 {
+      left: 300px;
+    }
+
+    .container_12 .push_6 {
+      left: 360px;
+    }
+
+    .container_12 .push_7 {
+      left: 420px;
+    }
+
+    .container_12 .push_8 {
+      left: 480px;
+    }
+
+    .container_12 .push_9 {
+      left: 540px;
+    }
+
+    .container_12 .push_10 {
+      left: 600px;
+    }
+
+    .container_12 .push_11 {
+      left: 660px;
+    }
+
+    /* `Pull Space >> 12 Columns
+    ----------------------------------------------------------------------------------------------------*/
+
+    .container_12 .pull_1 {
+      left: -60px;
+    }
+
+    .container_12 .pull_2 {
+      left: -120px;
+    }
+
+    .container_12 .pull_3 {
+      left: -180px;
+    }
+
+    .container_12 .pull_4 {
+      left: -240px;
+    }
+
+    .container_12 .pull_5 {
+      left: -300px;
+    }
+
+    .container_12 .pull_6 {
+      left: -360px;
+    }
+
+    .container_12 .pull_7 {
+      left: -420px;
+    }
+
+    .container_12 .pull_8 {
+      left: -480px;
+    }
+
+    .container_12 .pull_9 {
+      left: -540px;
+    }
+
+    .container_12 .pull_10 {
+      left: -600px;
+    }
+
+    .container_12 .pull_11 {
+      left: -660px;
+    }
+
+    /* `Clear Floated Elements
+    ----------------------------------------------------------------------------------------------------*/
+
+    /* http://sonspring.com/journal/clearing-floats */
+
+    .clear {
+      clear: both;
+      display: block;
+      overflow: hidden;
+      visibility: hidden;
+      width: 0;
+      height: 0;
+    }
+
+    /* http://www.yuiblog.com/blog/2010/09/27/clearfix-reloaded-overflowhidden-demystified */
+
+    .clearfix:before,
+    .clearfix:after,
+    .container_12:before,
+    .container_12:after {
+      content: '.';
+      display: block;
+      overflow: hidden;
+      visibility: hidden;
+      font-size: 0;
+      line-height: 0;
+      width: 0;
+      height: 0;
+    }
+
+    .clearfix:after,
+    .container_12:after {
+      clear: both;
+    }
+
+    /*
+      The following zoom:1 rule is specifically for IE6 + IE7.
+      Move to separate stylesheet if invalid CSS is a problem.
+    */
+
+    .clearfix,
+    .container_12 {
+      zoom: 1;
+    }
+    
+    .bannerSlider .centerContainer,
+    .bannerSlider .centerBlock {
+        float:none;
+        position:static;
+    }
+    
+    .bannerSlider li img {
+        max-width:100%;
+    }
+    
+    .topCategory li a {
+        font-size:12px;
+        padding-left:9px;
+        padding-right:9px;
+    }
+    
+    /* Блок пользователя в шапке */
+    
+    .container_12 .userGrid {
+        clear:left;
+        width:100%;
+        margin-top:25px;
+        margin-bottom:25px;
+    }
+    
+    .userGrid .compareTopBlock {
+        background-position:left 5px;
+        text-align:left;        
+        padding:5px 0 0 40px;
+        min-height:26px;        
+    }
+    
+    .userGrid .sign,
+    .userGrid .cartBlock,
+    .userGrid .favoriteLink {
+        background-position:left top;
+        text-align:left;        
+        padding:5px 0 0 40px;
+        min-height:26px;        
+    }
+    
+    .userGrid .countFavorite,
+    .userGrid .productCount,
+    .userGrid .compareItemsCount {
+        display:inline;
+        vertical-align: baseline;
+        position: relative;
+        top: -0.4em;
+    }
+    
+    .userGrid .sign {
+        padding-top:0;
+    }
+    
+    /* Конец блока пользователя в шапке */
+    
+    .container_12 .logoGrid {
+        width:auto;
+    }
+    
+    .userBaseGrid {
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -moz-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -moz-box-direction: normal;
+      -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+      flex-direction: row;        
+    }
+    
+    /*
+    .sign .icon,
+    .cartBlock .icon {
+        float:left;
+        margin-right:10px;
+    }
+    
+    .sign .auth,
+    .sign .register {
+        margin-left:43px;
+        display:block;
+    }
+    */
+    
+    .products li {
+        width:31.8%;
+        margin-right:1.5%;
+        margin-bottom:1.5%;
+    }
+    
+    .catalog .products li {
+        width:48%;
+        margin-right:2%;
+        margin-bottom:1.5%;
+    } 
+    
+    .lastNews .title {
+        font-size:14px;
+    }
+    
+    .paginator .prev,
+    .paginator .next,
+    .paginator .prev:hover,
+    .paginator .next:hover {
+        width:22px;
+        background: url(../img/prevnext_small.png) no-repeat 0 50%;
+    }
+
+    .paginator .next {
+        background-position:-68px 50%;
+    }
+
+    .paginator .prev:hover {
+        background-position:-22px 50%;    
+    }
+
+    .paginator .next:hover {
+        background-position:-46px 50%;    
+    }    
+    
+    .blockLastViewed ul a {
+        width:60px;
+        height:60px;
+        line-height:60px;
+    }
+
+    
+    .lineListBlock .lineTrigger {
+        background: url(../img/down.png) no-repeat right center;
+        padding-right:25px;
+        display:inline;
+    }    
+    
+    .lineListBlock {
+        display:inline-block;    
+        position:relative;
+    }
+
+    .lineListBlock.collapse720{
+        display: inline;
+    }
+
+    .lineListBlock .lineList {
+        display:none;
+        position:absolute;
+        left:0;
+        top:100%;
+        z-index:10;
+        border:1px solid #ebebe5;
+        background: white;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        -moz-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        -webkit-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .lineListBlock.on .lineList { display:inline-block; }
+    .lineListBlock .lineList li { display:block; }
+    .lineListBlock .lineList li i { border:none; }
+    .lineListBlock .lineList li .act {
+        background: none;
+        border-radius:0;
+    }
+
+    .lineListBlock .lineList li .item {
+        display:block;
+        line-height:normal;
+        white-space:nowrap;
+    }
+
+    .lineListBlock .lineList li .item:hover {
+        background-color: #ececec;
+        color: #232323;
+    }
+    
+    .lineList .item.asc,
+    .lineList .item.desc {
+        background-color: #ffbf44;
+    }    
+    
+    .lastNews ul li {
+        text-align:center;
+    }    
+    
+    .productTable tr,
+    .productTable td {
+        display:block;
+        border:none;
+    }
+    
+    .productTable tr {
+        overflow:hidden;
+        border-bottom:1px solid #ececec;
+        border-top:1px solid #ececec;
+    }
+    
+    .productTable .image {
+        float:left;
+    }
+    
+    .productTable .price {
+        padding:0;
+    }
+    
+    .productTable .info,
+    .productTable .price,
+    .productTable .actions {
+        margin-left:122px;
+        width:auto;
+        text-align:left;
+    }
+    
+    .productTable .price {
+        position:absolute;
+        margin-top:10px;
+    }
+    
+    .productTable .actions {
+        float:right;
+        margin-left:0;
+        padding-top:0;
+    }
+    
+    
+    .productTable .info .descr {
+        font-size:12px;
+    }        
+    
+    .exceptionInfo .code {
+        top:158px;
+        left:145px;
+        font-size:20px;
+    }
+
+    .exceptionInfo .message {
+        bottom:250px;
+        left:306px;
+        width:290px;
+    }
+
+    .exceptionInfo .links {
+        position:absolute;
+        left:327px;
+        top:259px;
+    }    
+    
+    .body404 {
+        box-shadow:inset 0 0 70px #cec4af;
+    }
+    
+    .product .image {
+        float:none;
+    }
+    
+    .product .gallery {
+        float:none;
+        margin-top:9px;
+        overflow:hidden;
+    }
+    
+    .product .gallery .scrollWrap {
+        margin:0 23px;
+        height:auto;
+    }
+    
+    .product .gallery .scrollBlock {
+        width:1500px;
+        height:auto;
+    }
+    
+    .product .gallery ul li {
+        float:left;
+        
+    }
+    
+    .product .gallery li a {
+        border:1px solid #eaeaea;
+        border-left:none;
+    }
+    
+    .product .gallery li.first a {
+        border-left:1px solid #eaeaea;
+    }    
+    
+    .product .gallery .prev,
+    .product .gallery .next {
+        background: url(../img/prevnext_small.png) no-repeat;
+    }
+    
+    .product .gallery .prev {
+        left:0;
+        top:50%;
+        margin:-11px 0 0;
+    }
+    
+    .product .gallery .next {
+        left:auto;
+        bottom:auto;
+        right:0;
+        top:50%;
+        margin:-11px 0 0;
+        background-position:-66px 0;
+    }    
+    
+    .themeTable thead {
+        display:none;
+    }
+    
+    .themeTable tbody td {
+        display:block;
+        border:none;
+    }
+    
+    .themeTable tbody tr {
+        position:relative;
+        display:block;
+    }
+    
+    
+    .themeTable .remove {
+        padding: 0;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        width: auto;
+    }
+    
+    .themeTable .datetime .date,
+    .themeTable .datetime .time {
+        display:inline;
+    }
+    
+    .themeTable.noMobile thead {
+        display:none;
+    }
+    
+    .themeTable.noMobile tbody td {
+        display:table-cell;
+        border:none;
+    }
+    
+    .themeTable.noMobile tbody tr {
+        border-bottom:1px solid #ececec;
+        display:table-row;
+    }    
+    
+    .myOrders .number {
+        width:auto;
+        overflow:hidden;
+    }
+    
+    .myOrders .number .info {
+        float:left;
+    }
+    
+    .myOrders .number .orderStatus {
+        float:right;
+    }
+    
+    .myOrders .price,
+    .myOrders .actions {
+        display:inline-block;
+    }     
+    
+    .supportTable tbody tr {
+        border-bottom: 1px solid #ECECEC;
+    }
+    
+    .supportTable .title {
+        padding-bottom: 0;
+        padding-top: 0;
+    }    
+    
+    .news li {
+        float:none;
+        width:auto;
+        margin:0 0 20px;
+    }    
+    
+    .cartTable .price {
+        width:120px;
+    }
+    
+    .cartTableAfter .price {
+        width:126px;
+    }
+    
+    .cartTableBefore .price {
+        width:146px;
+    }
+    
+    .cartTableBefore .amount {
+        width:120px;
+    }
+    
+    .cartTable .amount {
+        width:120px;
+    }
+    
+    .writeComment form .nameBlock .name,
+    .writeComment form .nameBlock .captcha {
+        float:none;
+        width:90%;
+        padding:0 5%;
+    }
+
+    .writeComment form .nameBlock .captcha input {
+        width:70px;
+    }    
+
+    .photoList li a {
+        height:154px;
+        line-height:154px;
+    }    
+    
+}

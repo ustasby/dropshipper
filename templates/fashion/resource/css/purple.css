@@ -1,0 +1,79 @@
+body {
+  background: url(../img/purple/bg.jpg) repeat top center;
+}
+
+h1, h3, .newsTitle, .h1,
+.category ul .node:hover ul a:hover,
+.commentFormBlock .caption,
+.orderViewProducts,
+.checkoutBox .coItems .summary,
+.cartTableAfter,
+.compareLines .group,
+.profileMenu li:hover a, 
+.profileMenu .act a,
+footer .footzone .menu li a:hover,
+.category ul li:hover a {
+    color: #a63813;
+}
+
+.howToPay,
+header .menu ul li:hover:before,
+.button.color:hover,
+.formStyle input[type=submit]:hover,
+.button.addToCart:hover,
+.fixedCart .checkout.active,
+.tabs .tabList li.act a,
+footer .copyline,
+.ddList ul li:hover,
+.userBlock .authorized .dropdown li a:hover,
+.userBlock .authorized .dropdown li.item:hover:before,
+.category ul ul ul li:hover:before {
+    background-color: #a63813;
+}
+
+
+.fixedCart .checkout.active,
+.tabs .tabList,
+h1, h3, .newsTitle, .h1, .blockHeader,
+.commentFormBlock .caption,
+.orderViewProducts,
+.checkoutBox .coItems .summary,
+.cartTableAfter,
+.compareLines .group,
+.ddList ul li:hover {
+    border-color: #a63813;
+}
+
+
+.button.color:hover,
+.formStyle input[type=submit]:hover,
+.button.addToCart:hover,
+.fixedCart .checkout.active:hover {
+    border-color:#972a05;
+}
+
+.fixedCart .cart .openCart {
+    background-image:url(../img/purple/floatcart.png);
+}
+
+.fixedCart .floatCompare .doCompare {
+    background-image:url(../img/purple/floatcmp.png);
+}
+
+.hotLinks .links a {
+    color: white;
+}
+
+.hotLinks .links a:hover {
+    color: #F0F0F0;
+}
+
+.fixedCart .floatFavorite.active .countFavorite,
+.fixedCart .floatCompare.active .compareItemsCount,
+.fixedCart .cart.active .floatCartAmount {
+    background: #bf7d56;
+}
+
+#favoriteBlock .favoriteLink:before {
+    background-image:url(../img/purple/favorite.png)
+}

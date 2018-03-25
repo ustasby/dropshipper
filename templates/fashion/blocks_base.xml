@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<structure>
+  <page route_id="article-front-view" context="theme" template="%THEME%/wrapper_article.tpl" inherit="1"/>
+  <page route_id="catalog-front-compare" context="theme" template="%THEME%/fullscreen.tpl" inherit="1"/>
+  <page route_id="catalog-front-listproducts" context="theme" template="%THEME%/wrapper_catalog.tpl" inherit="1"/>
+  <page route_id="default" context="theme" template="%THEME%/default.tpl" inherit="1"/>
+  <page route_id="main.index" context="theme" template="%THEME%/index.tpl" inherit="1"/>
+</structure>

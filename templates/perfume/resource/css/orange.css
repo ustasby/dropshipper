@@ -1,0 +1,171 @@
+A:hover,
+.brandall a:hover,
+.authorization .recover:hover,
+.authorization .reg:hover,
+.products .price,
+.authBox .personal a:hover,
+.topCategory .catalog ul > li a:hover,
+.newsBlock .more:hover,
+.newsBlock .news .title:hover,
+.footMenu a:hover,
+.unobtainable,
+.lastNews .all:hover,
+.productTable .info .title:hover,
+.productTable .price,
+.recommended .info .title:hover,
+.recommended .info .price,
+.product .card .information .price,
+.product .card .information .cartBlock .addToCart:hover,
+.product .kv tr:hover .key,
+.product .kv tr:hover .value,
+.cartFloatBlock .items .title a:hover,
+.cartFloatBlock .items .price,
+.cartTableAfter .price,
+.cartTable .title .text:hover,
+.cartFloatBlock .cartTable .price,
+.cartPage .cartTable .price,
+.cartFloatBlock .onPromo .hasPromo,
+.cartFloatBlock .hasPromo:hover, 
+.cartFloatBlock .promo a:hover, 
+.cartFloatBlock .clearCart:hover,
+.formStyle button:hover,
+.formStyle input[type=submit]:hover,
+.colorButton:hover,
+.yourCab .subMenu .act a,
+.supportTable .title a:hover,
+.orderTable .number .more:hover,
+.orderTable .items .title:hover,
+.orderViewProducts .scrollWrapper ul li .title:hover,
+.paymentResult .fail,
+.paymentResult .success,
+.paymentResult .icon img,
+.paymentResult .icon .text,
+.compareItem .price,
+.compareItem .addToCart:hover,
+.multiComplectations .price, 
+.multiComplectations .addToCart:hover,
+.cartFloatBlock .cartTable .title a:hover,
+.warehouseDiv .warehouseRow .title:hover,
+.checkoutSteps li a:hover,
+div.topCategory .mobile .caption:hover {
+    color: #f08421;
+}
+
+.formStyle button,
+.formStyle input[type=submit],
+.colorButton,
+.product .kv tr:hover .key,
+.product .kv tr:hover .value,
+.product .social .share:hover .handler,
+.addToCart,
+.showMultiOffers,
+.topCategory .catalog ul {
+    border-color: #f08421;
+}
+
+.formStyle button,
+.formStyle input[type=submit],
+.colorButton,
+.paginator a.act,
+.paginator a.act:hover,
+.topCategory .catalog > li:hover > a,
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,
+.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,
+.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar,
+.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar,
+.fixedCart .up:hover,
+.fixedCart .checkout.active,
+.fixedCart .floatFavorite.active .countFavorite,
+.fixedCart .compare.active .compareItemsCount,
+.fixedCart .cart.active .floatCartAmount,
+.addToCart,
+.showMultiOffers,
+.superPrice .info,
+.rsTabs .tabList .right a:hover,
+.exceptionBody .toRoot,
+.bannerProduct .items a.act,
+div.topCategory .mobile .toggle:hover {
+    background-color: #f08421;
+}
+
+.commentFormBlock .starsBlock i {
+    background-image:url(../img/orange/bigstars.png);
+}
+
+.fixedCart .cart .icon,
+.checkoutHead .yourcart .icon {
+    background-image:url(../img/orange/cart.png);
+}
+
+.fixedCart .compare .icon {
+    background-image:url(../img/orange/cart_compare.png);
+}
+
+.iconX,
+.closeButton,
+.cartFloatBlock .items .remove a,
+.commentFormBlock .caption .close {
+    background-image:url(../img/orange/close.png);
+}
+
+.paymentResult .fail {
+    background-image:url(../img/orange/fail.png);
+}
+
+.jslider .jslider-bg i,
+.jslider .jslider-pointer { background-image: url(../img/orange/jslider.plastic.png); }
+
+.exceptionBody .toRoot i {
+    background-image:url(../img/orange/leftcorner.png);
+}
+
+.brandLine .brandcontrol,
+.productGalleryWrap .prev,
+.productGalleryWrap .next {
+    background-image:url(../img/orange/lrarrow.png);
+}
+
+.supportTable .msgCount .number {
+    background-image: url(../img/orange/mail.png);
+}
+
+.bannerProduct li .prev {
+    background-image: url(../img/orange/prevnext.png);
+}
+
+.product .social .share .handler {
+    background-image: url(../img/orange/shareh.png);
+}
+
+.stars,
+.stars i {
+    background-image: url(../img/orange/stars.png);
+}
+
+.paymentResult .success {
+    background-image: url(../img/orange/success.png);
+}
+
+.products .hoverLayer .gallery .up,
+.products .hoverLayer .gallery .down,
+.cartTable .incdec .inc,
+.cartTable .incdec .dec {
+    background-image: url(../img/orange/updown.png);
+}
+
+.bannerProduct li .info .price {
+    background-image:url(../img/orange/bannercost_arr.png), url(../img/orange/bannercost_big.png);
+}
+
+.fixedCart .floatFavorite  .icon {
+    background-image: url(../img/orange/float_favorite.png);
+}
+
+.product .compare:before,
+.products .hoverLayer .compare span {
+    background-image: url(../img/orange/cmp.png);
+}
+
+.favorite.inline:before {
+    background-image: url(../img/orange/favorite.png);
+}

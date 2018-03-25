@@ -1,0 +1,102 @@
+body {
+  background: url(../img/green/bg.jpg) repeat top center;
+}
+
+h1, h3, .newsTitle, .h1,
+.category ul .node:hover ul a:hover,
+.commentFormBlock .caption,
+.orderViewProducts,
+.checkoutBox .coItems .summary,
+.cartTableAfter,
+.compareLines .group,
+.profileMenu li:hover a, 
+.profileMenu .act a,
+footer .footzone .menu li a:hover,
+.category ul li:hover a {
+    color: #859100;
+}
+
+
+header .menu ul li:hover:before,
+.howToPay,
+.button.color:hover,
+.formStyle input[type=submit]:hover,
+.button.addToCart:hover,
+.fixedCart .checkout.active,
+.fixedCart .floatFavorite.active .countFavorite, 
+.fixedCart .floatCompare.active .compareItemsCount,
+.fixedCart .cart.active .floatCartAmount,
+.tabs .tabList li.act a,
+footer .copyline,
+.ddList ul li:hover,
+.userBlock .authorized .dropdown li a:hover,
+.userBlock .authorized .dropdown li.item:hover:before,
+.category ul ul ul li:hover:before {
+    background-color: #c9d823;
+}
+
+
+.fixedCart .checkout.active,
+.tabs .tabList,
+h1, h3, .newsTitle, .h1, .blockHeader,
+.commentFormBlock .caption,
+.orderViewProducts,
+.checkoutBox .coItems .summary,
+.cartTableAfter,
+.compareLines .group,
+.ddList ul li:hover {
+    border-color: #c9d823;
+}
+
+footer .copyline,
+footer .developer,
+footer .developer span {
+    color: #777;
+}
+
+.button.color:hover,
+.button.addToCart:hover,
+.formStyle input[type=submit]:hover,
+.fixedCart .checkout.active,
+.fixedCart .floatFavorite.active .countFavorite, 
+.fixedCart .floatCompare.active .compareItemsCount,
+.fixedCart .cart.active .floatCartAmount {
+    color: #111;
+}
+
+.button.color:hover,
+.formStyle input[type=submit]:hover,
+.button.addToCart:hover,
+.fixedCart .checkout.active:hover {
+    border-color:#b4c218;
+}
+
+.fixedCart .cart .openCart {
+    background-image:url(../img/green/floatcart.png);
+}
+
+.fixedCart .floatCompare .doCompare {
+    background-image:url(../img/green/floatcmp.png);
+}
+
+.button.addToCart {
+    background-image:url(../img/green/cart.png);
+}
+
+.addMoneyForm input.addFunds,
+.personalAccount .addFunds {
+    background-image: url(../img/green/addfunds.png);
+}
+
+.commentFormBlock .formStyle input[type=submit] {
+    background-image: url(../img/green/comment_submit.png);
+}
+
+.jslider .jslider-bg i,
+.jslider .jslider-pointer { 
+    background-image:url(../img/green/jslider.plastic.png);
+}
+
+#favoriteBlock .favoriteLink:before {
+    background-image:url(../img/green/favorite.png)
+}

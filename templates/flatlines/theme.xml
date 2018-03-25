@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<theme scriptType="shop" scriptMajorVersion="2" themeType="pc">
+    <general>
+        <author>ReadyScript lab.</author>
+        <name>Современная</name>
+        <description>Адаптивная тема, собранная по сетке bootstrap 3 в плоском стиле</description>
+        <version>3.0.39</version>
+    </general>
+    <shades>
+        <shade>
+            <id>blue</id>
+            <title>Голубой</title>
+            <color>#6ea9d1</color>
+        </shade>
+        <shade>
+            <id>green</id>
+            <title>Зеленый</title>
+            <color>#7b9733</color>
+        </shade>
+        <shade>
+            <id>darkgreen</id>
+            <title>Темно-зеленый</title>
+            <color>#5c836e</color>
+        </shade>
+        <shade>
+            <id>violet</id>
+            <title>Фиолетовый</title>
+            <color>#7048b8</color>
+        </shade>
+        <shade>
+            <id>darkblue</id>
+            <title>Темно-синий</title>
+            <color>#34607b</color>
+        </shade>
+        <shade>
+            <id>black</id>
+            <title>Черный</title>
+            <color>#35323d</color>
+        </shade>
+    </shades>
+    <options>
+        <group name="Основные">
+            <option name="enable_one_click_cart" type="checkbox">
+                <description>Включить заказ в 1 клик в корзине</description>
+                <default>1</default>
+            </option>
+            <option name="enable_favorite" type="checkbox">
+                <description>Включить добавление товаров в избранное</description>
+                <default>1</default>
+            </option>
+            <option name="enable_compare" type="checkbox">
+                <description>Включить сравнение товаров</description>
+                <default>1</default>
+            </option>
+            <option name="enable_comments" type="checkbox">
+                <description>Включить комментарии с рейтингом</description>
+                <default>1</default>
+            </option>
+            <option name="enable_amount_in_product_card" type="checkbox">
+                <description>Разрешить указывать кол-во товара в карточке</description>
+                <default>0</default>
+            </option>
+
+            <option name="phone_number1" type="string">
+                <description>Номер телефона 1</description>
+                <default>8-800-000-00-00</default>
+            </option>
+            <option name="phone_description1" type="string">
+                <description>Подпись к номеру телефона</description>
+                <default>Интернет-магазин</default>
+            </option>
+
+            <option name="phone_number2" type="string">
+                <description>Номер телефона 2</description>
+                <default>8-800-000-00-01</default>
+            </option>
+            <option name="phone_description2" type="string">
+                <description>Подпись к номеру телефона</description>
+                <default>Тех. поддержка</default>
+            </option>
+            <option name="enable_page_fade" type="checkbox">
+                <description>Включить плавное появление страниц</description>
+                <default>0</default>
+            </option>
+            <option name="enable_description_to_bottom" type="checkbox">
+                <description>Переместить описание категории вниз страницы</description>
+                <default>0</default>
+            </option>
+        </group>
+    </options>
+</theme>

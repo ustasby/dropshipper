@@ -1,0 +1,1 @@
+<a href="http://readyscript.ru" target="_blank" class="footerDeveloper">{t}Работает на{/t}<br><span>ReadyScript</span></a>
