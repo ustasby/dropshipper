@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+    <defaultValues>
+        <name multilanguage="true">Управление SEO</name>
+        <description multilanguage="true">Позволяет переназначать любые заголовки и описания у страниц по маске</description>
+        <version>3.0.6</version>
+        <author>ReadyScript lab.</author>
+    </defaultValues>
+</config>

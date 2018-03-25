@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+    <defaultValues>
+        <name multilanguage="true">Блоки данных</name>
+        <description multilanguage="true">Позволяет создавать произвольные структуры данных, которые можно использовать в различных информационных сайтах</description>
+        <version>3.0.2</version>
+        <author>ReadyScript lab.</author>
+    </defaultValues>
+</config>

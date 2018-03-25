@@ -1,0 +1,1 @@
+{moduleinsert name="\Photo\Controller\Admin\BlockPhotos" type="dn_{$field->getName()}" linkid=$elem.id}
