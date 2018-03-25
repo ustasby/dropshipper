@@ -8,3 +8,5 @@ logs/
 
 storage/
 var/
+*.auto.tpl
+!/core/rs/cache/

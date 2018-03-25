@@ -16,7 +16,7 @@
                     {hook name="evasmart-cartpage:products" title="{t}Корзина:товары{/t}" product_items=$product_items}
                         <div class="catalog-list">
                             <div class="row">
-                                <!-- {$cart_items|print_r:1} -->
+                                <!-- {*$cart_items|print_r:1*} -->
                                 {foreach $cart_data.items as $index => $item}
                                     {$product = $product_items[$index].product}
                                     {$cartitem = $product_items[$index].cartitem}
