@@ -10,3 +10,4 @@ storage/
 var/
 *.auto.tpl
 !/core/rs/cache/
+!/core/
