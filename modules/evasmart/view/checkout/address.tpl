@@ -1,7 +1,9 @@
 {* Оформление заказа. Шаг - Адрес *}
-
+{addjs file="%evasmart%/ds_checkout.js" basepath="root"}
 <div class="page-registration-steps">
     <div class="t-registration-steps">
+        {* Текущий шаг оформления заказа *}
+        {moduleinsert name="\Shop\Controller\Block\CheckoutStep"}
 
         <div class="form-style">
 
@@ -49,12 +51,41 @@
 
                     <div class="form-group">
                         <label class="label-sup">{t}Контактное лицо{/t}</label>
-                        {$order->getPropertyView('contact_person', ['placeholder' => "{t}Лицо, которое встретит доставку. Например: Иван Иванович Пуговкин{/t}"])}
+                        {$order->getPropertyView('contact_person', ['placeholder' => "{t}Лицо, которое получит доставку. Например: Иван Иванович Пуговкин{/t}"])}
                     </div>
 
+                    {*
+                    <div class="form-group">
+                        <label class="label-sup">{t}Телефон контактного лица{/t}</label>
+                        {$order->getPropertyView('user_phone', ['placeholder' => "{t}Номер телефона лица, которое получит заказ{/t}"])}
+                    </div>
+                    *}
 
                 </div>
 
+                {if $conf_userfields->notEmpty()}
+                    <div class="t-order_contact-information">
+                        <div class="additional">
+                            <h3 class="h3">{t}Дополнительные сведения{/t}</h3>
+                            {foreach $conf_userfields->getStructure() as $fld}
+                                <div class="form-group">
+                                    <label class="label-sup">{$fld.title}</label>
+                                    {$conf_userfields->getForm($fld.alias)}
+                                    {$errname=$conf_userfields->getErrorForm($fld.alias)}
+                                    {$error=$order->getErrorsByForm($errname, ', ')}
+                                    {if !empty($error)}
+                                        <span class="formFieldError">{$error}</span>
+                                    {/if}
+                                </div>
+                            {/foreach}
+                        </div>
+                    </div>
+                {/if}
+
+
+                <div class="form__menu_buttons text-center next">
+                    <button type="submit" class="link link-more">{t}Далее{/t}</button>
+                </div>
             </form>
         </div>
     </div>

@@ -1,6 +1,7 @@
 {* Комплектации товара *}
 
 {addjs file="rs.changeoffer.js"}
+{addjs file="%evasmart%/evasmart.changeoffer.js" basepath="root"}
 {$shop_config=ConfigLoader::byModule('shop')}
 {$check_quantity=$shop_config.check_quantity}
 {$catalog_config=ConfigLoader::byModule('catalog')}
@@ -121,7 +122,7 @@
 
         {if $product.type_product == "mat"}
 
-            {addjs file="evasmart.changeoffer.js"}
+
 
             <span class="product-offers_pname">{$product.offer_caption|default:t('Материал')}</span>
             <div class="product-offers_values">
