@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+    <defaultValues>
+        <name multilanguage="true">Капча - защита от роботов</name>
+        <description multilanguage="true">Отображает картинку с цифрами, которые человек должен набрать вручную</description>
+        <version>3.0.4</version>
+        <author>ReadyScript lab.</author>
+        <is_system>1</is_system>
+    </defaultValues>
+</config>

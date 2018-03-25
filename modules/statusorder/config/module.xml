@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+    <defaultValues>
+        <name multilanguage="true">Статус заказа</name>
+        <description multilanguage="true">Отображает статус заказа, а также по трекномеру отслеживает посылку для Почты России, Boxberry и СДЕК</description>
+        <version>1.0.2.3</version>
+        <author>Евгений Петров</author>
+    </defaultValues>
+</config>

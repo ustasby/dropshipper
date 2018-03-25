@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+    <defaultValues>    
+        <name multilanguage="true">Пользователи и группы</name>
+        <description multilanguage="true">Управление пользователями. Добавление, удаление, назначение прав</description>        
+        <version>3.0.20</version>
+        <author>ReadyScript lab.</author>
+        <is_system>1</is_system>
+        
+        <generate_password_length>8</generate_password_length>
+        <generate_password_symbols>abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789#?</generate_password_symbols>
+        <csv_id_fields type="array">
+            <value>e_mail</value>
+        </csv_id_fields>
+    </defaultValues>
+</config>

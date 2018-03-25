@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+    <defaultValues>
+        <name multilanguage="true">TinkoffPayment</name>
+        <description multilanguage="true">Интернет-эквайринг банка Тинькофф</description>
+        <version>1.0.0.3</version>
+        <author>Николай Кравцов vampirus.ru</author>
+    </defaultValues>
+</config>

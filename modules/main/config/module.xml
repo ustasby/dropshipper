@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+    <defaultValues>
+        <name multilanguage="true">Системный модуль</name>
+        <description multilanguage="true">Основные функции движка</description>
+        <version>3.0.21</version>
+        <author>ReadyScript lab.</author>
+        <is_system>1</is_system>
+        
+        <image_quality>95</image_quality>
+        <wmark_min_width>300</wmark_min_width>
+        <wmark_min_height>300</wmark_min_height>
+        <wmark_pos_x>center</wmark_pos_x>
+        <wmark_pos_y>middle</wmark_pos_y>
+        <wmark_opacity>100</wmark_opacity>
+        <csv_charset>windows-1251</csv_charset>
+        <csv_delimiter>;</csv_delimiter>
+        <csv_check_timeout>1</csv_check_timeout>
+        <csv_timeout>26</csv_timeout>
+        <geo_ip_service>ipgeobase</geo_ip_service>
+    </defaultValues>
+</config>

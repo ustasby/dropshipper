@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<signatures>
+  <file>
+    <path>config/changelog.txt</path>
+    <sign>ef9ce034878fdf5674eda62c3b9f95fb20544843</sign>
+  </file>
+  <file>
+    <path>config/file.inc.php</path>
+    <sign>a1a4f946c04578e07cffec5f1aeb86660298493d</sign>
+  </file>
+  <file>
+    <path>config/handlers.inc.php</path>
+    <sign>ffd435ae1988360087190c5f5da2ea841e723721</sign>
+  </file>
+  <file>
+    <path>config/module.xml</path>
+    <sign>b164d45b6108b85125b5b9d743efc066bcc7c447</sign>
+  </file>
+  <file>
+    <path>model/apptypes/storemanagement.inc.php</path>
+    <sign>3597d507ea45ed42319091c870a5f998b89013b2</sign>
+  </file>
+  <file>
+    <path>model/push/newordertoadmin.inc.php</path>
+    <sign>bafb1a44a00084b0e9b415ebbebf79f3ab301aae</sign>
+  </file>
+  <file>
+    <path>model/push/newordertocourier.inc.php</path>
+    <sign>6c7d9ddd8db104daa66643d2c1c189c81e53e32e</sign>
+  </file>
+  <masterSign>7868261c33b0c234a9c5b2a806d6ad1c8566888526670bc519ca249e1a654489ed4efe3aa5b155fae6311d8bf8d70c6e4400d2b47a2dee21370adfaca27b1a893df1a65ff2e2a30a0aac2e73a2f75c66102cc72ec41c987b3a661ca46be79e5d5c953c63f0bab31d13856ba3a4ef331c03557c6eb4b9dd9e13f35ceb9849a4c0</masterSign>
+</signatures>

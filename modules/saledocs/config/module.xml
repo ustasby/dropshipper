@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+    <defaultValues>
+        <name multilanguage="true">Дополнительные печатные формы - Договор, счет и акт</name>
+        <description multilanguage="true">Позволяет распечатать договор, счет и акт приема-передачи товара для заказа</description>
+        <version>3.0.2</version>
+        <dependfrom>catalog,shop</dependfrom>
+        <author>ReadyScript lab.</author>
+        <cache_pdf>1</cache_pdf>
+        <contract_tpl>%saledocs%/contract.tpl</contract_tpl>
+        <act_tpl>%saledocs%/act.tpl</act_tpl>
+        <bill_tpl>%saledocs%/bill.tpl</bill_tpl>
+    </defaultValues>
+</config>

@@ -1,0 +1,243 @@
+.order-status__window {
+	display: block;
+	position: fixed;
+	background: #fff;
+	width: 450px;
+	/*height: 380px;*/
+	overflow: hidden;
+	left: 50%;
+	top: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	padding: 1em;
+	border-radius: .2em;
+	text-align: center;
+	vertical-align: middle;
+	box-shadow: 0 0 5px 5px rgba(0, 0, 0, .1);
+	opacity: 0;
+	visibility: hidden;
+	z-index: 1001;
+	-webkit-transition: all .3s ease-in 0s;
+	-moz-transition: all .3s ease-in 0s;
+	-o-transition: all .3s ease-in 0s;
+	transition: all .3s ease-in 0s;
+}
+
+.order-status__result-window {
+	display: block;
+	position: fixed;
+	background: #fff;
+	width: 450px;
+	height: 380px;
+	max-height: 90%;
+	overflow: hidden;
+	left: 50%;
+	top: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	padding: 1em;
+	border-radius: .2em;
+	font-size: 14px;
+	text-align: left;
+	box-shadow: 0 0 5px 5px rgba(0, 0, 0, .1);
+	opacity: 0;
+	visibility: hidden;
+	z-index: 1001;
+	-webkit-transition: all .3s linear 0s;
+	-moz-transition: all .3s linear 0s;
+	-o-transition: all .3s linear 0s;
+	transition: all .3s linear 0s;
+}
+
+.order-status__close {
+	display: inline-block;
+	position: absolute;
+	right: 20px;
+	top: 16px;
+}
+
+.order-status__window ul {
+	list-style: none;
+	margin-top: 38px;
+	margin-bottom: 38px;
+	padding: 0;
+	display: block;
+}
+
+.order-status__window li {
+	margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.order-status__window li.loading {
+	display: none;
+}
+
+.order-status__window .orderstatus-icon {
+	display: inline-block;
+	width: 48px;
+	height: 48px;
+	background: url(../img/orderstatus-icon.png);
+}
+
+.order-status__window input[type="text"] {
+	padding: 1em;
+	color: #222;
+	border: 1px solid #aaa;
+	width: 280px;
+	font-size: 14px;
+}
+
+.order-status__window li.input {
+	margin-bottom: 10px;
+}
+
+.order-status__window button {
+	display: inline-block;
+	position: relative;
+	padding: .6em;
+	width: 150px;
+    height: 34px;
+    margin-top: 10px;
+    font-size: 14px;
+	color: #fff;
+	background: #cc3333;
+	border-radius: .2em;
+	border: 0;
+}
+
+.order-status__window button:active {
+	top: .3em;
+}
+
+.order-status__overlay {
+	display: block;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,.6);
+	opacity: 0;
+	visibility: hidden;
+	z-index: 1000;
+}
+
+.show-modal {
+	opacity: 1;
+	visibility: visible;
+}
+
+.order-status {
+	display: flex;
+	position: relative;
+	height: 32px;
+}
+
+.order-status a {
+	color: #111;
+	font-size: 14px;
+	margin: auto;
+}
+
+.order-status a:hover {
+color: #d00;
+cursor: pointer;
+}
+
+.order-status__result {
+	margin-top: 1em;
+}
+
+.order-status__span {
+	font-weight: bold;
+}
+
+.order-status__info {
+	margin-top: 2px;
+	font-weight: bold;
+}
+
+.order-status__tracking {
+	display: block;
+	margin-top: 1em;
+	height: 280px;
+	max-height: 50%;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+.order-status__delivered {
+	color: green;
+}
+
+.order-status__error {
+	display:block;
+	position: absolute;
+	text-align: center;
+	width: 90%;
+	margin: 0 auto;
+	color: #ef533a;
+	font-size: 200%;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+ul.tracking {
+	list-style: none;
+	padding: 0;
+}
+ul.tracking li {
+	padding-top: .4em;
+	padding-bottom: .4em;
+}
+
+ul.tracking li:nth-child(odd) {
+	background: #ccc;
+}
+
+.checkpoints li .datetime {
+	text-align: right;
+	display: table-cell;
+	width:120px;
+	color: #444;
+}
+
+.checkpoints li .datetime .date {
+	display: block;
+}
+
+.checkpoints li .datetime .time {
+	display: block;
+}
+
+.checkpoints li .status {
+	display: table-cell;
+	width: 30px;
+	padding-right: .4em;
+	padding-left: .4em;
+}
+
+.checkpoints li .status-1 {
+	background: url('../img/status-1.png') top center no-repeat;
+	background-size: 60%;
+}
+
+.checkpoints li .status-2 {
+	background: url('../img/status-2.png') top center no-repeat;
+	background-size: 60%;
+}
+
+.checkpoints li .status-3 {
+	background: url('../img/status-3.png') top center no-repeat;
+	background-size: 60%;
+}
+
+.checkpoints li .info {
+	display: table-cell;
+	text-align: left;
+}
+
+.checkpoints li em {
+	display: block;
+	font-style: normal;
+	text-decoration: none;
+}

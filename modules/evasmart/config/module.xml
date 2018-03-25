@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+    <defaultValues>
+        <name multilanguage="true">Evasmart</name>
+        <description multilanguage="true">Кастомный модуль для всего</description>
+        <version>3.0.0</version>
+        <author>Sergey Stepanov</author>
+    </defaultValues>
+</config>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+    <defaultValues>
+        <name multilanguage="true">Магазин</name>
+        <description multilanguage="true">Модуль предоставляет возможность оформлять и администрировать заказы, управлять корзиной</description>
+        <version>3.0.63</version>
+        <author>ReadyScript lab.</author>
+        <is_system>1</is_system>
+        <check_quantity>0</check_quantity>
+        <basketminlimit>0</basketminlimit>
+        <dependfrom>catalog</dependfrom>
+        <discount_code_len>10</discount_code_len>
+        <user_orders_page_size>10</user_orders_page_size>
+        <require_address>1</require_address>
+        <require_zipcode>0</require_zipcode>
+        <use_geolocation_address>1</use_geolocation_address>
+        <require_email_in_noregister>1</require_email_in_noregister>
+        <require_phone_in_noregister>0</require_phone_in_noregister>
+        <use_personal_account>1</use_personal_account>
+        <reservation>0</reservation>
+        <allow_concomitant_count_edit>0</allow_concomitant_count_edit>
+        <use_generated_order_num>0</use_generated_order_num>
+        <generated_ordernum_mask>{n}</generated_ordernum_mask>
+        <generated_ordernum_numbers>6</generated_ordernum_numbers>
+        <hide_delivery>0</hide_delivery>
+        <hide_payment>0</hide_payment>
+        <auto_send_supply_notice>1</auto_send_supply_notice>
+        <remove_nopublic_from_cart>0</remove_nopublic_from_cart>
+        <cashregister_class>atolonline</cashregister_class>
+        <cashregister_enable_log>0</cashregister_enable_log>
+        <cashregister_enable_auto_check>1</cashregister_enable_auto_check>
+        <return_rules>
+            <![CDATA[<p>Статья 25. Право потребителя на обмен товара надлежащего качества</p>
+            <p>1. Потребитель вправе обменять непродовольственный товар надлежащего качества на аналогичный товар у продавца, у которого этот товар был
+            приобретен, если указанный товар не подошел по форме, габаритам, фасону, расцветке, размеру или комплектации.
+            Потребитель имеет право на обмен непродовольственного товара надлежащего качества в течение четырнадцати дней, не считая дня его покупки.
+            Обмен непродовольственного товара надлежащего качества проводится, если указанный товар не был в употреблении, сохранены его товарный вид,
+            потребительские свойства, пломбы, фабричные ярлыки, а также имеется товарный чек или кассовый чек либо иной подтверждающий оплату указанного
+            товара документ. Отсутствие у потребителя товарного чека или кассового чека либо иного подтверждающего оплату товара документа не лишает его
+            возможности ссылаться на свидетельские показания.</p>
+            <p>Перечень товаров, не подлежащих обмену по основаниям, указанным в настоящей статье, утверждается Правительством Российской Федерации.</p>
+            ]]>
+        </return_rules>
+        <return_print_form_tpl>%shop%/return/pdf_form.tpl</return_print_form_tpl>
+        <return_enable>0</return_enable>
+        <ofd>platformofd</ofd>
+        <ban_courier_del>0</ban_courier_del>
+    </defaultValues>
+</config>

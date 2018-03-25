@@ -1,0 +1,48 @@
+.deliveryWidjet .title{
+    margin-top: 20px;
+    margin-bottom: 7px;
+    font-size: 12px;
+}
+
+.deliveryWidjet .pickpointsMap{
+    max-width: 700px;
+    height: 350px;
+    margin-top: 10px;
+}
+
+.deliveryWidjet .pickpointsAdditionalInfo{
+    margin-top: 7px;
+}
+
+.deliveryWidjet .pickpointsAdditionalInfo{
+    font-size: 12px;
+}
+
+.deliveryWidjet .pickpointsAdditionalInfo .key{
+    margin-right: 5px;
+    border-bottom: 0;
+}
+
+.deliveryWidjet .pickpointsAdditionalInfo .row{
+    display: block;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    color:gray;
+}
+
+.deliveryWidjet .additionalTitleInfo{
+    font-size: 12px;
+    margin-bottom: 10px;
+    color: gray;
+}
+
+.deliveryWidjet .deliveryInfoRow{
+    margin-top: 10px;
+}
+
+.deliveryWidjet .formSave{
+    display: inline-block;
+    width: auto;
+    padding: 8px 20px;
+    margin-top: 0px;
+}
