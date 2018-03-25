@@ -5,6 +5,6 @@ test/
 .idea/
 cache/
 logs/
-robots.txt
+
 storage/
 var/
