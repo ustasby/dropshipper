@@ -974,13 +974,14 @@ class Cart
         $result['total_unformatted'] = $result['total'];
         
         if ($format) {
-            
+
             foreach($result['items'] as &$product) {
                 $product['single_cost'] = CustomView::cost($product['single_cost'], $currency);
                 $product['cost']        = CustomView::cost($product['cost'], $currency);
                 $product['base_cost']   = CustomView::cost($product['base_cost'], $currency);
                 $product['discount']    = CustomView::cost($product['discount'], $currency);
-                
+
+
                 if (isset($product['sub_products'])){
                     foreach($product['sub_products'] as &$sub_product) {
                         $sub_product['cost']        = CustomView::cost($sub_product['cost'], $currency);
@@ -1003,6 +1004,10 @@ class Cart
             //Если если доставка и её надо преобразовать в форматированный вид
             if (isset($result['delivery'])) {
                 $result['delivery']['cost'] = CustomView::cost($result['delivery']['cost'], $currency);
+                /**
+                 * change
+                 */
+                $result['delivery']['cost_unformatted'] = $result['delivery']['cost'];
             }
             
             //Если если комиссия и её надо преобразовать в форматированный вид
@@ -1614,6 +1619,8 @@ class Cart
             'items' => array(),
             'items_count' => 0,
             'total_weight' => 0,
+
+
         ) + $result;
         
         $module_config = \RS\Config\Loader::byModule($this);
@@ -1646,7 +1653,12 @@ class Cart
                 'single_cost' => $cost, //Цена за единицу товара
                 'single_weight' => $product->getWeight(), //Вес единицы товара
                 'discount' => 0,
-                'sub_products' => array()
+                'sub_products' => array(),
+                /**
+                 * change
+                 */
+                'ds_single_cost' => $item['cartitem']['ds_single_cost'],
+                'ds_price' => $item['cartitem']['ds_price'],
             );
             
             //Если задано, что заказать можно только определённое количество товара и количество не соотвествует

@@ -282,16 +282,30 @@ class Handlers extends \RS\Event\HandlerAbstract
     }
 
 
-    public static function controllerBeforeExecShopFrontCheckout($params)
+    public static function controllerBeforeExecShopFrontCheckout(array $params)
     {
-        //print_r($params); exit;
+        //print_r($params['action']); exit;
 
         $action = $params['action'];
+        $controller = $params['controller'];
         if ($action == 'confirm') {
             $request = Request::commonInstance();
-            $params['order']['price_buyer'] = $request->request('price_buyer', TYPE_FLOAT);
-            $params['order']['price_delivery_buyer'] = $request->request('price_delivery_buyer', TYPE_FLOAT);
-            $params['order']['prepay_buyer'] = $request->request('prepay_buyer', TYPE_FLOAT);
+            if ($request->isPost()) {
+                $controller->order['price_buyer'] = $request->request('price_buyer', TYPE_FLOAT);
+                $controller->order['order']['price_delivery_buyer'] = $request->request('price_delivery_buyer', TYPE_FLOAT);
+                $controller->order['order']['prepay_buyer'] = $request->request('prepay_buyer', TYPE_FLOAT);
+            } else {
+                $cart_data = $controller->order['basket'] ? $controller->order->getCart()->getCartData() : null;
+                $controller->order['price_buyer'] = 0;
+                // выводим в конце заказа
+                if (is_array($cart_data)) {
+                    foreach ($cart_data['items'] as $item) {
+                        $controller->order['price_buyer'] += $item['ds_single_cost'] * $item['amount'];
+                    }
+                }
+
+                //print_r($cart_data); die();
+            }
         }
     }
 

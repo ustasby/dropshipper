@@ -76,6 +76,11 @@
                                             {t discount=$cartdata.items[$n].discount}скидка %discount{/t}
                                             </div>
                                         {/if}
+                                        {if $cartdata.items[$n].ds_single_cost}
+                                        <div class="card-price_ds">
+                                            Цена покупателя {$cartdata.items[$n].ds_price} р.
+                                        </div>
+                                        {/if}
                                     </div>
                                 </div>
                             {/foreach}
@@ -124,6 +129,36 @@
                                 </div>
                             {/if}
                             {/hook}
+                            {* с хуком без вариантов *}
+                            {if $current_user->isAdmin() || $current_user->inGroup('DS') }
+                                {*$order|print_r*}
+                                {*$cartdata|print_r*}
+                                {if $order.order_type == 1}
+                                    <div class="t-order_comments">
+                                        <div class="form-group">
+
+                                            <label>Стоимость заказа для конечного покупателя</label>
+                                            <input name="price_buyer" value="{$order.price_buyer}" type="text">
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label>Стоимость доставки для конечного покупателя</label>
+                                            <input name="price_delivery_buyer"
+                                                   value="{if $cartdata.delivery.cost_unformatted}{$cartdata.delivery.cost_unformatted}{else}0{/if}" type="text">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Предоплата от покупателя</label>
+                                            <input name="prepay_buyer" value="0" type="text">
+                                        </div>
+
+                                    </div>
+                                {/if}
+                            {/if}
+
+
+
+
+
                         </div>
 
                         <div class="t-order_comments">

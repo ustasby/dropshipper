@@ -1,5 +1,5 @@
 {* Корзина на отдельной странице *}
-{addjs file="%evasmart%/ds_checkout.js" basepath="root"}
+{addjs file="%evasmart%/evasmart.ds_checkout.js" basepath="root"}
 {$shop_config=ConfigLoader::byModule('shop')}
 {$catalog_config=ConfigLoader::byModule('catalog')}
 {$product_items=$cart->getProductItems()}

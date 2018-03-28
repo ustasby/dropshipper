@@ -7,7 +7,7 @@ use RS\Controller\AuthorizedFront;
 class CartPage extends AuthorizedFront
 {
 
-    protected $need_group = 'DS';
+    //protected $need_group = 'DS';
 
     /**
      * @var \Shop\Model\Cart $cart
@@ -45,7 +45,7 @@ class CartPage extends AuthorizedFront
                     }
                 }
             }
-            $this->redirect($this->router->getUrl('shop-front-checkout', array('Act' => 'index')));
+            $this->redirect($this->router->getUrl('evasmart-front-checkout', array('Act' => 'index')));
         }
 
         $this->app->breadcrumbs->addBreadCrumb(t('Оформление заказа'));
