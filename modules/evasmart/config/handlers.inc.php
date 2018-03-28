@@ -292,8 +292,8 @@ class Handlers extends \RS\Event\HandlerAbstract
             $request = Request::commonInstance();
             if ($request->isPost()) {
                 $controller->order['price_buyer'] = $request->request('price_buyer', TYPE_FLOAT);
-                $controller->order['order']['price_delivery_buyer'] = $request->request('price_delivery_buyer', TYPE_FLOAT);
-                $controller->order['order']['prepay_buyer'] = $request->request('prepay_buyer', TYPE_FLOAT);
+                $controller->order['price_delivery_buyer'] = $request->request('price_delivery_buyer', TYPE_FLOAT);
+                $controller->order['prepay_buyer'] = $request->request('prepay_buyer', TYPE_FLOAT);
             } else {
                 $cart_data = $controller->order['basket'] ? $controller->order->getCart()->getCartData() : null;
                 $controller->order['price_buyer'] = 0;
