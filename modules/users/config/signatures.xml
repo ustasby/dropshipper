@@ -2,7 +2,7 @@
 <signatures>
   <file>
     <path>config/changelog.txt</path>
-    <sign>2fac990a99b00b724a045f13eb4de515c54ab036</sign>
+    <sign>466487a783555ee21138b778fc9c69900b20a2c6</sign>
   </file>
   <file>
     <path>config/file.inc.php</path>
@@ -10,7 +10,7 @@
   </file>
   <file>
     <path>config/handlers.inc.php</path>
-    <sign>1708385681b5239fb27659b1d1bb5e94b8a5219c</sign>
+    <sign>ff6d2253a69e65102b8b8e516ac2031a9e16d216</sign>
   </file>
   <file>
     <path>config/install.inc.php</path>
@@ -18,7 +18,7 @@
   </file>
   <file>
     <path>config/module.xml</path>
-    <sign>d5177d755a086bfe34c01c1b02ed229c97bbb7d8</sign>
+    <sign>c9940a6e3ceddd18b7b1963a7e3efbb068e4f425</sign>
   </file>
   <file>
     <path>config/patches.inc.php</path>
@@ -98,7 +98,7 @@
   </file>
   <file>
     <path>model/groupapi.inc.php</path>
-    <sign>3ce8c86e29e09e1d63d01f1099c4a7b1d4e5e214</sign>
+    <sign>4a1c6ff60846367a8550ef922d7ad89a808a7efd</sign>
   </file>
   <file>
     <path>model/logapi.inc.php</path>
@@ -296,5 +296,5 @@
     <path>view/widget/authlog.tpl</path>
     <sign>c732b9afc24e50fd94f7edfbbcc689e311a8a6c5</sign>
   </file>
-  <masterSign>ad4e9830d2415a8af2bf005afce061d032741654f90f8c972ab463f1329a3ad4e31e2cd17ec45871f9e85cd8f90ae20024fdf4f8fc0f87f3163d06f0f98ce5300b76bd34c9608cd7868f9fc2fdb5dea98504c577d4df83622fb0fb46508b4e39d519b44174bfe75df3bc0fbaa9e192477dc2b8fc13d284f2ed5a45d5666854e7</masterSign>
+  <masterSign>ac9e4f1a9de3f6a3724fe57fd7dffbcf39b927272e91dbba2938ab98244624a9e6bd68745f6ac96d87943b566a87979dbc40384e07cbf11335b169337515849868edd51aaa2a41c6c6a5ae32ad0a3b7cc143d3f2f18c72c93b4b1360099923ab950cff72cf2b8f3fa44cbba7eff7667b6d373d71cd093956af527bdb728df304</masterSign>
 </signatures>

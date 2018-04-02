@@ -2,7 +2,7 @@
 <signatures>
   <file>
     <path>config/changelog.txt</path>
-    <sign>0599c7024feddd54778495efe677f67bc47d943a</sign>
+    <sign>7c7be2f2ce7a98dc3be7fc5f57faaaed8273a4d4</sign>
   </file>
   <file>
     <path>config/delivery/cdek/cdek_kaz.csv</path>
@@ -46,7 +46,7 @@
   </file>
   <file>
     <path>config/module.xml</path>
-    <sign>80c1174969f022a31a47e3263d7d207b29ae3a73</sign>
+    <sign>c4791d9b3d68aaec64acf7a6f04426d6a253dd0d</sign>
   </file>
   <file>
     <path>config/patches.inc.php</path>
@@ -70,7 +70,7 @@
   </file>
   <file>
     <path>controller/admin/orderctrl.inc.php</path>
-    <sign>4f8bfd453e85052649fe1ef79c53a4903fe87cbb</sign>
+    <sign>af5a8ae5da8a63c4ea91e7b25c0400ff29b91515</sign>
   </file>
   <file>
     <path>controller/admin/paymentctrl.inc.php</path>
@@ -237,6 +237,10 @@
     <sign>e1e82ee5982f2e92fad93d45761531cd858e5201</sign>
   </file>
   <file>
+    <path>model/csvpreset/orderitemsbase.inc.php</path>
+    <sign>d9362a8c212da3b1ba6542e30afda238f048d96b</sign>
+  </file>
+  <file>
     <path>model/csvpreset/orderproducts.inc.php</path>
     <sign>91adfac302f2de1c90c613b2d32aef580b25f96e</sign>
   </file>
@@ -255,6 +259,10 @@
   <file>
     <path>model/csvschema/order.inc.php</path>
     <sign>0fed5e12b8f3bce05c5016761a2052e965a81be5</sign>
+  </file>
+  <file>
+    <path>model/csvschema/orderitems.inc.php</path>
+    <sign>69f689ff504e702c5db0abdfaec247d870c21d03</sign>
   </file>
   <file>
     <path>model/csvschema/payment.inc.php</path>
@@ -622,7 +630,7 @@
   </file>
   <file>
     <path>model/orm/payment.inc.php</path>
-    <sign>8b374568b1787b92da142eaa1aff50b523c34257</sign>
+    <sign>238e3a069a6ddd7a5bf00bab02d0656789f2aea9</sign>
   </file>
   <file>
     <path>model/orm/productsreturn.inc.php</path>
@@ -726,7 +734,7 @@
   </file>
   <file>
     <path>model/paymenttype/yandexmoney.inc.php</path>
-    <sign>9aa3bd240b65d7f3dafe7a057e8d21f4d242f578</sign>
+    <sign>295f4c400a7d22f5d17d3a519f734695f538009e</sign>
   </file>
   <file>
     <path>model/printform/abstractprintform.inc.php</path>
@@ -1030,7 +1038,7 @@
   </file>
   <file>
     <path>view/form/order/payment_dialog.tpl</path>
-    <sign>93140ac395d6dd069442d4938ddce340ceceb362</sign>
+    <sign>e1b86b6f81cdc4f0f41e542e54cd3f0a07dd8ec7</sign>
   </file>
   <file>
     <path>view/form/order/user.tpl</path>
@@ -1520,5 +1528,5 @@
     <path>view/widget/sellchart.tpl</path>
     <sign>39ebc9e5d6c50174474249095c43ac16b447b0f4</sign>
   </file>
-  <masterSign>2c47dc1f1b13ab13c48682239df899ffd2aa66d4665712e0838acad5ea1d86d347ccdb6f78127db49ecdb9df09174896e32a2d0177730089a9be148861cb4b87d8c33d57bc78b941497f74fc773e5e1fa90428f9acf0e41bb16586edcb9f6b1c09850577a940f492f91ab2cc34e8384cf046a16a2a5a9ca34029990b769eb354</masterSign>
+  <masterSign>a3fd21989cc0eb7a9659fb41314318c1ea2c01d3e2e5e71d70d9bfde6fbfec0541d1dc49c64dd1e0256c84f12468c77006d7a999b705fac0075cfb88a19bbf86ee591ca8ef08588309a2a2346dff7f35acc0671a7dcce807a7e4d4bfc00b59f6de4cdd24ae4bad449ab98a86cbf30e755dce18fe92aec41a438998e9f175a3d4</masterSign>
 </signatures>

@@ -110,7 +110,9 @@ class YandexMoney extends AbstractType
                     'PC' => t('Яндекс.Деньги'),
                     'AC' => t('Банковская карта'),
                     'GP' => t('Терминал приёма платежей'),
+                    'EP' => t('ЕРИП (Беларусь)'),
                     'MC' => t('Мобильный телефон'),
+                    'MP' => t('Мобильный терминал (mPOS)'),
                     'WM' => 'WebMoney',
                     'SB' => t('Оплата через Сбербанк'),
                     'AB' => t('Оплата через Альфа-Клик'),
@@ -118,13 +120,13 @@ class YandexMoney extends AbstractType
                     'PB' => t('Оплата через интернет-банк Промсвязьбанка'),
                     'QW' => t('Оплата через QIWI Wallet'),
                     'KV' => t('Оплата через КупиВкредит (Тинькофф Банк)'),
-                    'QP' => t('Оплата через сервис Доверительный платеж (Куппи.ру)')
+                    //'QP' => t('Оплата через сервис Доверительный платеж (Куппи.ру)'),
+                    'CR' => t('Заплатить по частям')
                 )),
                 'template' => '%shop%/form/payment/yandexmoney/payment_type.tpl'
             )),
             'category_code' => new Type\Integer(array(
-                'description' => t('Характеристика отвечающая за категорию товаров по версии Яндекс для банков<br/>
-                Смотрите <a href="https://money.yandex.ru/i/forms/types_of_products.xls"></a>'),
+                'description' => t('Характеристика отвечающая за категорию товаров по версии Яндекс для банков<br/>Смотрите <a href="https://money.yandex.ru/i/forms/types_of_products.xls"></a>'),
                 'maxLength'    => 11,
                 'visible' => false,
                 'list' => array(array('\Catalog\Model\PropertyApi','staticSelectList'),true),

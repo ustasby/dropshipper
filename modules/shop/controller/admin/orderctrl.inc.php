@@ -149,6 +149,13 @@ class OrderCtrl extends \RS\Controller\Admin\Crud
                 )
             ),
             array(
+                'title' => t('Экспорт заказанных товаров в CSV'),
+                'attr' => array(
+                    'data-url' => \RS\Router\Manager::obj()->getAdminUrl('exportCsv', array('schema' => 'shop-orderitems', 'referer' => $this->url->selfUri()), 'main-csv'),
+                    'class' => 'crud-add'
+                )
+            ),
+            array(
                 'title' => t('Показать отчёт'),
                 'attr' => array(
                     'data-url' => \RS\Router\Manager::obj()->getAdminUrl('ordersReport'),

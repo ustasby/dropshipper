@@ -8,6 +8,7 @@
 
 namespace Catalog\Controller\Block;
 use \RS\Orm;
+use \RS\Site\Manager as SiteManager;
 
 /**
 * Контроллер - топ товаров из указанных категорий
@@ -91,7 +92,7 @@ class TopProducts extends \RS\Controller\StandartBlock
         
         if (!empty($dir_ids)) {
             $ids_with_childs = \RS\Cache\Manager::obj()
-                                    ->request(array($this->dirapi, 'FindSubFolder'), $dir_ids);
+                                    ->request(array($this->dirapi, 'FindSubFolder'), $dir_ids, SiteManager::getSiteId());
             
             $this->api->setFilter('dir', $ids_with_childs, 'in');
             $this->api->setFilter('public', 1);

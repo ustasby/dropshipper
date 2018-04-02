@@ -3,7 +3,7 @@
     <defaultValues>
         <name multilanguage="true">Каталог товаров</name>
         <description multilanguage="true">Администрирование каталога товаров по рубрикам</description>        
-        <version>3.0.53</version>
+        <version>3.0.54</version>
         <author>ReadyScript lab.</author>
         <is_system>1</is_system>
         <dependfrom>photo</dependfrom>

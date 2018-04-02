@@ -40,6 +40,12 @@ class Payment extends \RS\Orm\OrmObject
                     'maxLength' => '255',
                     'description' => t('Название'),
                 )),
+                'admin_suffix' => new Type\Varchar(array(
+                    'maxLength' => '255',
+                    'description' => t('Пояснение'),
+                    'hint' => t('Отображается только в диалогах административной части<br>
+                                    используйте если у вас есть доставки с одинаковым названем')
+                )),
                 'description' => new Type\Text(array(
                     'description' => t('Описание'),
                 )),

@@ -2,7 +2,7 @@
 <signatures>
   <file>
     <path>config/changelog.txt</path>
-    <sign>8265c5a6e1188a24e860b0c792966552b7e88e00</sign>
+    <sign>2cdbae21cac0cf0437e133b15bd403e67b4e49f9</sign>
   </file>
   <file>
     <path>config/demo/logo.png</path>
@@ -18,11 +18,11 @@
   </file>
   <file>
     <path>config/install.inc.php</path>
-    <sign>005eb122324ed465cc457ab30e21c7361c0827ce</sign>
+    <sign>14736694a75654e369c8e7711305dc107899838c</sign>
   </file>
   <file>
     <path>config/module.xml</path>
-    <sign>6ad3437b04b111f7717d0abf78968aed0d591589</sign>
+    <sign>322afc2edceea2a4f25cd44b6e7fa875ba8737db</sign>
   </file>
   <file>
     <path>config/patches.inc.php</path>
@@ -85,6 +85,10 @@
     <sign>153c49b8e74f381c7c663b6d2a66cbdfaf798df2</sign>
   </file>
   <file>
+    <path>controller/admin/widget/bestsellers.inc.php</path>
+    <sign>8f795296434b0316e93aac8a3c7d944e8df827af</sign>
+  </file>
+  <file>
     <path>controller/admin/widget/fastlinks.inc.php</path>
     <sign>11ef777e9022551888f57ca6cf42ce32cd0d4cc5</sign>
   </file>
@@ -135,6 +139,10 @@
   <file>
     <path>controller/front/stub.inc.php</path>
     <sign>91316838891dbdf2553640c1eae53e7c4115fb4c</sign>
+  </file>
+  <file>
+    <path>model/bestsellersapi.inc.php</path>
+    <sign>2d38eec34d6327a99eba4cbfa85c690498645623</sign>
   </file>
   <file>
     <path>model/blockedipapi.inc.php</path>
@@ -302,7 +310,7 @@
   </file>
   <file>
     <path>model/widgets.inc.php</path>
-    <sign>f7d193ab72fc8ed59a64dfc025c24caece6ba7bc</sign>
+    <sign>66c06cb7a364bffdffb555566e21f034eff4e843</sign>
   </file>
   <file>
     <path>view/adminblocks/headerpanel/header_panel_items.tpl</path>
@@ -355,6 +363,10 @@
   <file>
     <path>view/crud-options.tpl</path>
     <sign>5c3223210bb3d19c5518bb75640fe66e8bf6e386</sign>
+  </file>
+  <file>
+    <path>view/css/bestsellers.css</path>
+    <sign>1a72ff2a357da561b9edf1a2f23780e45af8fbcf</sign>
   </file>
   <file>
     <path>view/css/fastlinks.css</path>
@@ -417,6 +429,10 @@
     <sign>ef67efdb54dd86d8c11773404a52f5933b851392</sign>
   </file>
   <file>
+    <path>view/js/bestsellers.js</path>
+    <sign>bb4f2a6c4074d761ade5c8148d6cced2c75edeeb</sign>
+  </file>
+  <file>
     <path>view/js/cacheclean.js</path>
     <sign>101dcd9f3b4c1055eecf5bf29127eeed582590ca</sign>
   </file>
@@ -473,6 +489,18 @@
     <sign>ad88245f18622ac6343eede32ce05d48e6eca559</sign>
   </file>
   <file>
+    <path>view/widget/bestsellers.tpl</path>
+    <sign>8736841a3a3ec3a5a5b9a89e89b736de78950794</sign>
+  </file>
+  <file>
+    <path>view/widget/bestsellers_dialog.tpl</path>
+    <sign>9ed9a395ef4062170cb98e574157cd0c49e72752</sign>
+  </file>
+  <file>
+    <path>view/widget/bestsellers_items.tpl</path>
+    <sign>b1aaa268a27231d2f749ce1369d119c5942779bd</sign>
+  </file>
+  <file>
     <path>view/widget/fastlinks.tpl</path>
     <sign>97b008f7e98404e3b66e6367fddc7602d0e16f3b</sign>
   </file>
@@ -500,5 +528,5 @@
     <path>view/widgets.tpl</path>
     <sign>793d25c59e17a6326cd52033c3754228cbfa0d60</sign>
   </file>
-  <masterSign>1bdbed8fe6843b9f1c1e711cd91726e5364617f09c3f937634b67e474e406c8c0deaf9d841c3cc936f8c7868cd3ed6872dbc88cf847512bb9b9501aaac1f7e2c4ce983fbad431f5afc1449334b4d4a47b0735c3df06dbbeb1f69dfdc006de72395916bfc376d726b9c9aa47618da7a11821e0b5764588e82ca6a16bf69008e50</masterSign>
+  <masterSign>33bc65346d8abd8145bc000522976962862c79a27db18c2b3a553f4c0aef04d4f27f00b7e0cbde751ecd4fff33b0960a8697c99fb2871dd17cdea448518be649f44d6ff1f1ced59ec029a1ec0ea5b4dd4f2e123acec2ffed9d9124130c643c524ec39b7b518945d84ad86010bc68139863ab07a704cbc3f7c15ca3e23b87a99c</masterSign>
 </signatures>

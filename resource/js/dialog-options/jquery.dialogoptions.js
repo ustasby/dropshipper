@@ -65,8 +65,6 @@ var _open = $.ui.dialog.prototype.open;
 $.ui.dialog.prototype.open = function () {
     var self = this;
 
-    // apply original arguments
-    _open.apply(this, arguments);
 
     if ($.rs) {
         $.rs.lockBody();
@@ -189,6 +187,9 @@ $.ui.dialog.prototype.open = function () {
     if (self.options.dialogClass) {
         $('.ui-widget-overlay').addClass(self.options.dialogClass);
     }
+
+    // apply original arguments
+    _open.apply(this, arguments);
 };
 //end open
 

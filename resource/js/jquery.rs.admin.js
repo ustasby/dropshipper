@@ -401,7 +401,7 @@
                     .toggleClass($(this).data('toggleClass'))
                     .hasClass($(this).data('toggleClass'));
 
-                $(target).trigger('resize');
+                $(target).trigger('resize', {source: this});
 
                 var cookieName = $(this).data('toggle-cookie');
                 if (cookieName) {

@@ -8,7 +8,9 @@
                 {if !empty($plist)}
                     <select name="payment">
                         {foreach from=$plist item=item}
-                            <option value="{$item.id}" {if $item.id==$order.payment}selected{/if}>{$item.title}</option>
+                            <option value="{$item.id}" {if $item.id==$order.payment}selected{/if}>
+                                {$item.title}{if !empty($item.admin_suffix)} ({$item.admin_suffix}){/if}
+                            </option>
                         {/foreach}
                     </select>
                 {else}

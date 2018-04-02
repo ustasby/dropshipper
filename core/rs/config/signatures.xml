@@ -118,11 +118,11 @@
   </file>
   <file>
     <path>core/rs/config/abstractsetup.inc.php</path>
-    <sign>a9429e7f637a4740bba8315e6ef770ec38883c37</sign>
+    <sign>dfc3ab13d62cf9b71ab3fca9de372f215d1e27e0</sign>
   </file>
   <file>
     <path>core/rs/config/changelog.txt</path>
-    <sign>45c4e5ee4f9c26851fe83abe1bf25fc927f0213b</sign>
+    <sign>e8eeadea5673b3b4e280ea646f9b8b8fbb5c0260</sign>
   </file>
   <file>
     <path>core/rs/config/cms.inc.php</path>
@@ -2694,7 +2694,7 @@
   </file>
   <file>
     <path>core/system/licenser.inc.php</path>
-    <sign>1ca51407ea08e30898340601572e73e9fab4bf51</sign>
+    <sign>bd340af8631b95e327fc7288863a3489d205ae88</sign>
   </file>
   <file>
     <path>core/system/sessions.inc.php</path>
@@ -3438,7 +3438,7 @@
   </file>
   <file>
     <path>resource/js/dialog-options/jquery.dialogoptions.js</path>
-    <sign>846095eb5a80070d5e83f72faece58ac91549b40</sign>
+    <sign>c7aa0bd5d98752b5a8086f7caee4a4a27d7c6a51</sign>
   </file>
   <file>
     <path>resource/js/fileinput/fileinput.min.js</path>
@@ -3518,7 +3518,7 @@
   </file>
   <file>
     <path>resource/js/jquery.rs.admin.js</path>
-    <sign>774731e359a08540c2a6925f77a06323aacd383d</sign>
+    <sign>3bd088db8fab8431f082b9793317537c63557498</sign>
   </file>
   <file>
     <path>resource/js/jquery.rs.admindebug.js</path>
@@ -5168,5 +5168,5 @@
     <path>templates/system/meta.tpl</path>
     <sign>1e3ce0a6deefdb5c263b7d66f2f14fe5baa0250d</sign>
   </file>
-  <masterSign>0e7b71e808d36fe5c3ab3bcae24ac4dd660102399f3bcd6e767754650a63c763787ef201d276bc747f8a6ff0c4eef941732e656743107b3059b20acc5b2c7302c8a2dcaec06ac00cc8b58169d8f0ccc5bed660a968be2a7b03d5341865896a0f2a31223b32252b7d30aa97d139ae13cd69a486de2067c5adf88af2604a418ab3</masterSign>
+  <masterSign>52a76ac9bb4bee6762f87cc7cb381016215a424934416ea65030346bc89aa12c43d422ea7691f7e8ea475154fc89fe0d166130fd589ddd72b19d8de0133fddb82f72c39cc73858b410ffdf8a5105dc4be41fd11e90b7281b9793883fc3a876e496c29cd28f3b84413ec4a6fd2609f80a8baa8c67a7f81b22d2bfff615f0052df</masterSign>
 </signatures>

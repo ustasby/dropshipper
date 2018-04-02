@@ -3,7 +3,7 @@
     <defaultValues>
         <name multilanguage="true">Системный модуль</name>
         <description multilanguage="true">Основные функции движка</description>
-        <version>3.0.21</version>
+        <version>3.0.23</version>
         <author>ReadyScript lab.</author>
         <is_system>1</is_system>
         

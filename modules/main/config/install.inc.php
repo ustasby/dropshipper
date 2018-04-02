@@ -18,6 +18,7 @@ class Install extends \RS\Module\AbstractInstall
             $widget_api->setUserId(1);
             $widget_api->insertWidget('comments-widget-newlist', 2);
             $widget_api->insertWidget('users-widget-authlog', 3);
+            $widget_api->insertWidget('main-widget-bestsellers', 2, 0);
         }
         return $result;
     }

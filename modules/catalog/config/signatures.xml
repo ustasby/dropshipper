@@ -2,7 +2,7 @@
 <signatures>
   <file>
     <path>config/changelog.txt</path>
-    <sign>16c8383273e7394c20329752b54bb9c951e175bb</sign>
+    <sign>5067fc05f716911cea02e7118c1e50e69204b053</sign>
   </file>
   <file>
     <path>config/demo/brand.csv</path>
@@ -2998,7 +2998,7 @@
   </file>
   <file>
     <path>config/module.xml</path>
-    <sign>43d14f37518781b9ebb666834df70c1c132a1197</sign>
+    <sign>24cb6a39c91a11c577e571a9b697ecc63508a2ed</sign>
   </file>
   <file>
     <path>config/patches.inc.php</path>
@@ -3118,7 +3118,7 @@
   </file>
   <file>
     <path>controller/block/topproducts.inc.php</path>
-    <sign>94f213040d5d69e74371fd46a81fdbdff726353b</sign>
+    <sign>896f32645b8d2bcc8872ad1f31e9b186f45ee69d</sign>
   </file>
   <file>
     <path>controller/front/allbrands.inc.php</path>
@@ -4052,5 +4052,5 @@
     <path>view/widget/watchnow.tpl</path>
     <sign>44d4c0a6abf8d2f50f437fc6c9b21e6f98781228</sign>
   </file>
-  <masterSign>68245abb6619e3ebc23c9944f70d2abf0056f6754bd080e62ae77a856af74a5693ae09648deccf9212d85cf348c0756738a671d34f56b04a56bbb35b7958731afb5b3226eb0d449412e86ae0be5a230bb1f36ad5f1dab4e183451e6440fc745a0c9e930d906e8517af6361a2632ffb58f609e850b794c79d33b890b3e492bf3c</masterSign>
+  <masterSign>a39164f67a34af33cd9f5cd0899252f3cc3f8c9a1910a51a4958b0a2cfbbf32a7c0fa27c741361dcbcc420b54451dbf40a81c1f7d9b04e9fb7368557a8d7a1fb70754eec529df1e99df0a7f81f43b5ec3b4dbc017096d1bbc1f987650c355743285d5fb7e1b6f934952c7af71e2d635c7efbdb0d7093576d9945cc1ffed3d222</masterSign>
 </signatures>

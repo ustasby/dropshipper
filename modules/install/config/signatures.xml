@@ -6,7 +6,7 @@
   </file>
   <file>
     <path>config/module.xml</path>
-    <sign>765db80e9a701408e4f5f201a0224753cc5e853c</sign>
+    <sign>d51a60df06d582427b3d49c5e4eda8c472173df8</sign>
   </file>
   <file>
     <path>controller/wizard.inc.php</path>
@@ -130,7 +130,7 @@
   </file>
   <file>
     <path>view/step3.tpl</path>
-    <sign>81231f0a4b05ed41f5db83808552843b53741302</sign>
+    <sign>b83798c8e6711fa3469f4c6fe1a57579654e5f3c</sign>
   </file>
   <file>
     <path>view/step4.tpl</path>
@@ -148,5 +148,5 @@
     <path>view/wrap.tpl</path>
     <sign>5b3de75cb6e9c5a4ed4f108ed5dc6de3ea4eef97</sign>
   </file>
-  <masterSign>9e0baba16a925656f68b44a00a2df1ebd1d956aaa844aafbbd6638fd3c68b0380e45a976d7d9c0a07e31ba206a191a6972bf9367476582673f809c3bb3c521ce6bdaea118bbec6b15df3dd769d887c8460e841317fbf68745d37eba7e320453c05755600f9607f91318543aab2b801d1a9444f11979acea37700953a2cd8b28a</masterSign>
+  <masterSign>01523a49939c39e89db955c1ebec3db81160e292d2e03e94229b139c84cba1611186fae2153a564884aa720966c4060d89c93662a5af05d0dc55f770c0870f770c92eec94db42eccc9543180437167be4ec2640529b47dc645adfb71fa5b41c2f69e286d1e04f4d556da7de7a349fe6fdf548b4c76f5a5e6e1112d214d1a53d6</masterSign>
 </signatures>

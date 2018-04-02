@@ -18,7 +18,7 @@ abstract class AbstractSetup
         $INSTALLED,
         
         //Общие параметры
-        $VERSION          = '3.0.308',  //Текущая версия ядра
+        $VERSION          = '3.0.309',  //Текущая версия ядра
         $CLASS_EXT        = 'inc.php',    //Расширение файлов с классами
         $CUSTOM_CLASS_EXT = 'my.inc.php', //Расширение файлов с перегруженными классами
         $PATH,   //Путь к корневому каталогу системы = DOCUMENT_ROOT + FOLDER
@@ -161,10 +161,20 @@ abstract class AbstractSetup
         $NOPHOTO_THEME_FILE = 'nophoto.jpg',
 
         $METER_RECALCULATE_INTERVAL = 300, //5 мин, Интервал в секундах, с которым будут пересчитываться счетчики в админ. панели
+        $DISABLE_WIDGETS = array(), //Список коротких идентификаторов виджетов, которые следует отключить. Например: main-widget-bestsellers
         
         $IS_CLI_MODE = false, //Флаг запуска из командной строки
         
-        $YOUR_IP_BLOCKED = 'Доступ с вашего IP запрещен'; //Фраза, отображаемая при обращении с заблокированного IP
+        $YOUR_IP_BLOCKED = 'Доступ с вашего IP запрещен', //Фраза, отображаемая при обращении с заблокированного IP
+
+        //Параметры установки ReadyScript по умолчанию. Эти данные будут использованы в модуле install
+        $INSTALL_DB_HOST = '127.0.0.1',   //Хост БД
+        $INSTALL_DB_NAME = 'readyscript', //Имя БД
+        $INSTALL_DB_USERNAME = 'root',    //Пользователь БД
+        $INSTALL_DB_PASSWORD = '',        //Пароль БД
+        $INSTALL_ADMIN_LOGIN = '',        //Логин к административной панели
+        $INSTALL_ADMIN_PASSWORD = '',     //Пароль к административной панели
+        $INSTALL_SET_DEMO_DATA = true;    //Устанавливать демо-данные
         
     protected static 
         //Подключаемые модули

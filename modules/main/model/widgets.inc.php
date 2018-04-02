@@ -75,7 +75,7 @@ class Widgets
             
         foreach($list as $widget) {
             $full_class_name = Orm\Widgets::staticGetFullClass($widget['class']);
-            if (class_exists($full_class_name)) {
+            if (!in_array($widget['class'], \Setup::$DISABLE_WIDGETS) && class_exists($full_class_name)) {
                 $result[] = $widget;                
             } else {
                 //Удаляем с рабочего стола несуществующие виджеты
@@ -427,11 +427,13 @@ class Widgets
                     $filename = basename($file);
                     $widget_name = str_replace(array('.my.'.\Setup::$CLASS_EXT, '.'.\Setup::$CLASS_EXT), '', $filename);
                     $widget_class = $module.'\\'.str_replace('/', '\\', $this->widget_folder).'\\'.$widget_name;
-                    
+
                     if ($this->issetWidget($widget_class)) {
                         $instance = new $widget_class();
                         $info = $instance->getWidgetInfo();
-                        $widgets[$info['short_class']] = $info;
+                        if (!in_array($info['short_class'], \Setup::$DISABLE_WIDGETS)) {
+                            $widgets[$info['short_class']] = $info;
+                        }
                         unset($instance);
                     }
                 }
@@ -562,5 +564,7 @@ class Widgets
                     'id' => $widget_id
                 ))->exec();
         }
+
+        return true;
     }
 }

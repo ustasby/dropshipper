@@ -15,7 +15,8 @@ class Handlers extends \RS\Event\HandlerAbstract
         $this
             ->bind('start')
             ->bind('getmenus')
-            ->bind('getroute');
+            ->bind('getroute')
+            ->bind('orm.afterwrite.site-site');
     }    
     
     public static function getRoute(array $routes)
@@ -85,6 +86,19 @@ class Handlers extends \RS\Event\HandlerAbstract
             if (!\RS\Router\Manager::obj()->isAdminZone()) {
                 \RS\Application\Auth::getCurrentUser()->saveVisitDate();
             }
+        }
+    }
+
+    /**
+     * Обработка события создания cайта, копирование прав доступа групп пользователей
+     *
+     * @param array $data - массив данных
+     */
+    public static function ormAfterwriteSiteSite($params)
+    {
+        if (\Setup::$INSTALLED) {
+            $new_site_id = $params['orm']['id'];
+            \Users\Model\GroupApi::cloneRightFromDefaultSite($new_site_id);
         }
     }
 }

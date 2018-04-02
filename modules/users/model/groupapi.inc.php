@@ -7,6 +7,11 @@
 */
 namespace Users\Model;
 
+use Site\Model\Orm\Site;
+use Users\Model\Orm\AccessMenu;
+use Users\Model\Orm\AccessModule;
+use Users\Model\Orm\AccessSite;
+
 class GroupApi extends \RS\Module\AbstractModel\EntityList
 {    
     function __construct()
@@ -105,6 +110,67 @@ class GroupApi extends \RS\Module\AbstractModel\EntityList
     {
         $_this = new static();
         return $root + $_this->getSelectList();
+    }
+
+    /* Копирование прав доступа групп пользователей
+     * 
+     * @param integer $new_site_id
+     * @return void
+     */
+    static function CloneRightFromDefaultSite ($new_site_id) {
+        $default_site = Site::loadByWhere(array(
+            'default' => 1
+        ));
+
+        if ($default_site['id']) {
+
+            $access_site = \RS\Orm\Request::make()
+                ->from(new AccessSite())
+                ->where(array(
+                        'site_id' => $default_site['id']
+                    )
+                )
+                ->objects();
+
+            foreach($access_site as $item) {
+                unset($item['id']);
+                $item['site_id'] = $new_site_id;
+                $item->insert();
+            }
+
+            $access_module = \RS\Orm\Request::make()
+                ->from(new AccessModule())
+                ->where(array(
+                        'site_id' => $default_site['id']
+                    )
+                )
+                ->objects();
+
+            foreach($access_module as $item) {
+                unset($item['id']);
+                $item['site_id'] = $new_site_id;
+                $item->insert();
+            }
+
+
+            $access_menu = \RS\Orm\Request::make()
+                ->from(new AccessMenu())
+                ->where("`menu_type` != '#menu_type' AND `site_id` = '#site_id'", array(
+                        'menu_type' => 'admin',
+                        'site_id' => $default_site['id']
+                    )
+                )
+                ->objects();
+
+            foreach($access_menu as $item) {
+                unset($item['id']);
+                $item['site_id'] = $new_site_id;
+                $item->insert();
+            }
+
+
+
+        }
     }
 }
 
