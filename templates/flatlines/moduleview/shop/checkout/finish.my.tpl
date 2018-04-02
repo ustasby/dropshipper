@@ -168,20 +168,23 @@
                             <span>{$orderdata.total_cost}</span>
                         </div>
                     {/if}
-                    {if $current_user->isAdmin() || $current_user->inGroup('DS') }
+                    {if $order.order_type == 1 &&  ($current_user->isAdmin() || $current_user->inGroup('DS')) }
                         <div class="t-order-card_end-sum">
                             <p>{t}Стоимость заказа для конечного покупателя{/t}:</p>
-                            <span>{$order.price_buyer}</span>
+                            <span>{$order.price_buyer} р.</span>
                         </div>
                         <div class="t-order-card_end-sum">
                             <p>{t}Стоимость доставки для конечного покупателя{/t}:</p>
-                            <span>{$order.price_delivery_buyer}</span>
+                            <span>{$order.price_delivery_buyer} р.</span>
                         </div>
                         <div class="t-order-card_end-sum">
                             <p>{t}Предоплата от покупателя{/t}:</p>
-                            <span>{$order.prepay_buyer}</span>
+                            <span>{$order.prepay_buyer} р.</span>
                         </div>
-
+                        <div class="t-order-card_end-sum">
+                            <p>{t}К оплате покупателю{/t}:</p>
+                            <span>{$order.price_buyer + $order.price_delivery_buyer - $order.prepay_buyer } р.</span>
+                        </div>
 
                     {/if}
                     <div class="t-order_button-block">

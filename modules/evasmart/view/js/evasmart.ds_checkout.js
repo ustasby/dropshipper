@@ -3,7 +3,7 @@ $(function() {
         var result = true;
         $(this).find(".js-ds-cost").each(function (index, value) {
             //console.log($(value).val());
-            if (1 > parseInt($(value).val())) {
+            if (value == '' || 1 > parseInt($(value).val())) {
                 result = false;
             }
         });
